@@ -1,0 +1,30 @@
+{
+"parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:promise/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "no-use-extend-native",
+    "promise",
+    "unicorn",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": 0,
+    "quotes": ["error", "single"],
+    "semi": 1,
+    "no-use-extend-native/no-use-extend-native": "error",
+    "no-console": 0,
+    "no-plusplus": 1,
+    "strict": 1,
+    "unicorn/filename-case": 0
+  }
+}

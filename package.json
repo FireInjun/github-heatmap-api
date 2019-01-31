@@ -4,14 +4,39 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/",
+    "pretty": "eslint --fix src/",
+    "dev-start": "nodemon src/index.js",
+    "build": "parcel build src/server.js --target node --bundle-node-modules",
+    "clean": "rimraf dist/*"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mykeal 'Fireinjun' Kenny",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.4"
+    "compression": "^1.7.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-no-use-extend-native": "^0.4.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-unicorn": "^7.1.0",
+    "jest": "^24.0.0",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.1",
+    "rimraf": "^2.6.3",
+    "sinon": "^7.2.3",
+    "supertest": "^3.4.2"
   }
 }
